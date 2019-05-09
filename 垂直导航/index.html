@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>垂直多级导航菜单展开收缩效果_js代码</title>
+<meta name="keywords" content="jquery特效,导航菜单,展开收缩,收缩菜单,垂直导航菜单" />
+<meta name="description" content="jquery menu插件垂直多级导航菜单展开收缩效果。" />
+<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/menu_min.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+  $(".menu ul li").menu();
+}); 
+</script> 
+
+
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+
+</head>
+
+<body> 
+ 
+<div class="menu">
+	<ul>
+		<li><a class="active" href="#">Item 1</a>
+			<ul style="display: block;">
+				<li><a href="#">Subitem 1</a></li>
+				<li><a href="#">Subitem 2</a>
+					<ul>
+						<li><a href="#">Subitem 1</a></li>
+						<li><a href="#">Subitem 2</a></li>
+						<li><a href="#">Subitem 3</a></li>
+						<li><a href="#">Subitem 4</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Subitem 3</a></li>
+				<li><a href="#">Subitem 4</a>
+					<ul>
+						<li><a href="#">Subitem 1</a></li>
+						<li><a href="#">Subitem 2</a>
+						   <ul>
+						   		<li><a href="#">Subitem 1</a></li>
+						   			<li><a href="#">Subitem 1</a></li>
+						   </ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Subitem 5</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Item 2</a>
+			<ul>
+				<li><a href="#">Subitem 1</a></li>
+				<li><a href="#">Subitem 2</a></li>
+				<li><a href="#">Subitem 3</a></li>
+				<li><a href="#">Subitem 4</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Item 3</a>
+			<ul>
+				<li><a href="#">Subitem 1</a></li>
+				<li><a href="#">Subitem 2</a></li>
+				<li><a href="#">Subitem 3</a></li>
+				<li><a href="#">Subitem 4</a></li>
+				<li><a href="#">Subitem 5</a></li>
+				<li><a href="#">Subitem 6</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Item without subitems</a></li>
+		<li><a href="#">Item without subitems</a></li>
+	</ul>
+</div>
+
+</body>
+</html>
+<!--代码整理：js代码 www.jsdaima.com-->
